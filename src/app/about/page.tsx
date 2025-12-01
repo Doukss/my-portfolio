@@ -3,12 +3,14 @@ import { Header } from "@/components/Header";
 import ProfileCard from "@/components/ProfileCard";
 import ChromaGrid from "@/components/ChromaGrid";
 
-
 export default function AboutPage() {
   return (
     <main className="min-h-screen text-white">
       {/* <Header /> */}
-      <section className="w-[99%] mx-auto  border-4 border-[#125B65] rounded-3xl p-6 flex flex-col lg:flex-row justify-around  items-center   lg:gap-6 h-auto lg:h-[550px]" id="about">
+      <section
+        className="w-[99%] mx-auto  border-4 border-[#125B65] rounded-3xl p-6 flex flex-col lg:flex-row justify-around  items-center   lg:gap-6 h-auto lg:h-[550px]"
+        id="about"
+      >
         {/* Bloc texte */}
         <div className="w-full lg:w-[40%] text-center lg:text-left">
           <h1 className="font-bold text-3xl sm:text-4xl">Sur Moi</h1>
@@ -48,28 +50,36 @@ export default function AboutPage() {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl flex items-center justify-center">
+              <img src="vsc.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">Code Visual Studio</h1>
               <p>Éditeur de code</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+              <img src="rea.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">React JS</h1>
               <p>Cadre</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+              <img src="ne.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">Next JS</h1>
               <p>Cadre</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+              <img src="tail.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">Tailwind CSS</h1>
               <p>Cadre</p>
@@ -77,28 +87,36 @@ export default function AboutPage() {
           </div>
 
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+              <img src="boo.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">Bootstrap</h1>
               <p>Cadre</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+              <img src="js.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">JavaScript</h1>
               <p>Langue</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl flex items-center justify-center">
+              <img src="nod.png" alt="" className="w-14 h-14" />
+            </div>
             <div>
               <h1 className="font-bold">Node JS</h1>
               <p>Exécution Javascript</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl flex items-center justify-center">
+              <img src="git.png" alt="" className="w-14 h-14" />
+            </div>
             <div>
               <h1 className="font-bold">Github</h1>
               <p>Dépôt</p>
@@ -106,57 +124,73 @@ export default function AboutPage() {
           </div>
 
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+              <img src="ai.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">Adobe Illustrator</h1>
               <p>Application de concep...</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl flex items-center justify-center">
+              <img src="va.png" alt="" className="w-15 h-15 " />
+            </div>
             <div>
               <h1 className="font-bold">Canva</h1>
               <p>Application de concep...</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+            <img src="fg.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">Figma</h1>
               <p>Application de concep...</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+            <img src="ja.png" alt="" />
+            </div>
             <div>
-              <h1 className="font-bold">Manuscrit</h1>
+              <h1 className="font-bold">Java</h1>
               <p>Langue</p>
             </div>
           </div>
 
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+            <img src="css.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">CSS</h1>
               <p>Langue</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+            <img src="ht.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">HTML</h1>
               <p>Langue</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+            <img src="ff.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">Firebase</h1>
               <p>Cadre</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+            <img src="sq.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">MySQL</h1>
               <p>Cadre</p>
@@ -164,14 +198,18 @@ export default function AboutPage() {
           </div>
 
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+            <img src="vt.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">Vite</h1>
               <p>Cadre</p>
             </div>
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl"></div>
+            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
+            <img src="ph.png" alt="" />
+            </div>
             <div>
               <h1 className="font-bold">PHP</h1>
               <p>Langue</p>
@@ -252,44 +290,65 @@ export default function AboutPage() {
       </section>
 
       <footer className="mt-20 text-white py-12">
-  <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* Logo + description */}
+          <div>
+            <h1 className="text-2xl font-bold mb-3">CodeNivo</h1>
+            <p className="text-gray-400 text-sm">
+              Développeur Full Stack passionné, créant des solutions modernes et
+              performantes.
+            </p>
+          </div>
 
-    {/* Logo + description */}
-    <div>
-      <h1 className="text-2xl font-bold mb-3">CodeNivo</h1>
-      <p className="text-gray-400 text-sm">
-        Développeur Full Stack passionné, créant des solutions modernes et performantes.
-      </p>
-    </div>
+          {/* Navigation */}
+          <div>
+            <h3 className="font-semibold mb-3">Navigation</h3>
+            <ul className="space-y-2 text-gray-300">
+              <li>
+                <a href="/" className="hover:text-white transition">
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="hover:text-white transition">
+                  À propos
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="hover:text-white transition">
+                  Projets
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-white transition">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
 
-    {/* Navigation */}
-    <div>
-      <h3 className="font-semibold mb-3">Navigation</h3>
-      <ul className="space-y-2 text-gray-300">
-        <li><a href="#" className="hover:text-white transition">Accueil</a></li>
-        <li><a href="#" className="hover:text-white transition">Services</a></li>
-        <li><a href="#" className="hover:text-white transition">Portfolio</a></li>
-        <li><a href="#" className="hover:text-white transition">Contact</a></li>
-      </ul>
-    </div>
+          {/* Réseaux sociaux */}
+          <div>
+            <h3 className="font-semibold mb-3">Suivez-moi</h3>
+            <div className="flex space-x-4 text-gray-300">
+              <a href="#" className="hover:text-white transition">
+                Instagram
+              </a>
+              <a href="#" className="hover:text-white transition">
+                LinkedIn
+              </a>
+              <a href="#" className="hover:text-white transition">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
 
-    {/* Réseaux sociaux */}
-    <div>
-      <h3 className="font-semibold mb-3">Suivez-moi</h3>
-      <div className="flex space-x-4 text-gray-300">
-        <a href="#" className="hover:text-white transition">Instagram</a>
-        <a href="#" className="hover:text-white transition">LinkedIn</a>
-        <a href="#" className="hover:text-white transition">GitHub</a>
-      </div>
-    </div>
-  </div>
-
-  {/* Ligne du bas */}
-  <div className="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
-    © {new Date().getFullYear()} CodeNivo — Tous droits réservés.
-  </div>
-</footer>
-
+        {/* Ligne du bas */}
+        <div className="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+          © {new Date().getFullYear()} CodeNivo — Tous droits réservés.
+        </div>
+      </footer>
     </main>
   );
 }
