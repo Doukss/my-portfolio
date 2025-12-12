@@ -8,6 +8,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 import BlurText from "@/components/BlurText";
+import Link from "next/link";
 
 const handleAnimationComplete = () => {
   console.log("Animation completed!");
@@ -48,7 +49,7 @@ export default function AboutPage() {
               <SiPostgresql color="#336791" />
             </span>
             ), je conçois des applications complètes, robustes et évolutives.
-            J’aime relever des défis techniques, optimiser les performances et
+            J&#39;aime relever des défis techniques, optimiser les performances et
             livrer des solutions efficaces qui apportent une vraie valeur.
           </p>
         </div>
@@ -254,9 +255,9 @@ export default function AboutPage() {
         <div className="text-center">
           <h1 className="text-4xl font-bold">Projet</h1>
           <p>
-            Présentation d'une sélection de projets qui reflètent mes
+            Présentation d&#39;une sélection de projets qui reflètent mes
             compétences, ma créativité et ma passion pour la création
-            d'expériences numériques significatives.
+            d&#39;expériences numériques significatives.
           </p>
         </div>
         <ChromaGrid items={[]} />
@@ -337,24 +338,24 @@ export default function AboutPage() {
             <h3 className="font-semibold mb-3">Navigation</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <a href="/" className="hover:text-white transition">
+                <Link href="/" className="hover:text-white transition">
                   Accueil
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="hover:text-white transition">
+                <Link href="#about" className="hover:text-white transition">
                   À propos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#skills" className="hover:text-white transition">
+                <Link href="#skills" className="hover:text-white transition">
                   Projets
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white transition">
+                <Link href="#contact" className="hover:text-white transition">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -363,15 +364,15 @@ export default function AboutPage() {
           <div>
             <h3 className="font-semibold mb-3">Suivez-moi</h3>
             <div className="flex space-x-4 text-gray-300">
-              <a href="#" className="hover:text-white transition">
+              <Link href="#" className="hover:text-white transition">
                 Instagram
-              </a>
-              <a href="#" className="hover:text-white transition">
+              </Link>
+              <Link href="#" className="hover:text-white transition">
                 LinkedIn
-              </a>
-              <a href="#" className="hover:text-white transition">
+              </Link>
+              <Link href="#" className="hover:text-white transition">
                 GitHub
-              </a>
+              </Link>
             </div>
           </div>
         </div>
