@@ -1,7 +1,7 @@
 "use client";
 import { Header } from "@/components/Header";
 import ProfileCard from "@/components/ProfileCard";
-import ChromaGrid from "@/components/ChromaGrid";
+import { ChromaGrid } from "@/components/ChromaGrid";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -9,9 +9,8 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
 import BlurText from "@/components/BlurText";
 
-
 const handleAnimationComplete = () => {
-  console.log('Animation completed!');
+  console.log("Animation completed!");
 };
 
 export default function AboutPage() {
@@ -26,25 +25,32 @@ export default function AboutPage() {
         <div className="w-full lg:w-[40%] text-center lg:text-left">
           <h1 className="font-bold text-3xl sm:text-4xl">Sur Moi</h1>
           <p className="sm:text-xl mt-4 leading-relaxed">
-  Je suis un développeur Full Stack passionné par la création de
-  solutions numériques modernes et performantes. Grâce à une maîtrise
-  des technologies front-end (
-  JavaScript 
-  <span className="inline-flex items-center"><IoLogoJavascript color="yellow" /></span>, 
-  React 
-  <span className="inline-flex items-center"><FaReact color="#125B60" /></span>, 
-  Tailwind 
-  <span className="inline-flex items-center"><RiTailwindCssFill color="#125B60" /></span>) 
-  et back-end (Node.js
-  <span className="inline-flex items-center"><FaNodeJs  color="green" /></span>
-  , Express, bases de données SQL/NoSQL
-  <span className="inline-flex items-center"><SiPostgresql  color="#336791" /></span>
-  ), je conçois des
-  applications complètes, robustes et évolutives. J’aime relever des
-  défis techniques, optimiser les performances et livrer des solutions
-  efficaces qui apportent une vraie valeur.
-</p>
-
+            Je suis un développeur Full Stack passionné par la création de
+            solutions numériques modernes et performantes. Grâce à une maîtrise
+            des technologies front-end ( JavaScript
+            <span className="inline-flex items-center">
+              <IoLogoJavascript color="yellow" />
+            </span>
+            , React
+            <span className="inline-flex items-center">
+              <FaReact color="#125B60" />
+            </span>
+            , Tailwind
+            <span className="inline-flex items-center">
+              <RiTailwindCssFill color="#125B60" />
+            </span>
+            ) et back-end (Node.js
+            <span className="inline-flex items-center">
+              <FaNodeJs color="green" />
+            </span>
+            , Express, bases de données SQL/NoSQL
+            <span className="inline-flex items-center">
+              <SiPostgresql color="#336791" />
+            </span>
+            ), je conçois des applications complètes, robustes et évolutives.
+            J’aime relever des défis techniques, optimiser les performances et
+            livrer des solutions efficaces qui apportent une vraie valeur.
+          </p>
         </div>
 
         {/* Bloc carte profil */}
@@ -56,6 +62,10 @@ export default function AboutPage() {
             status="Online"
             contactText="Contact Me"
             avatarUrl="milk.jpg"
+            miniAvatarUrl="/milk.jpg"
+            innerGradient={["#0087CEEB", "#0087CEEB"]} // léger dégradé bleu
+            behindGlowColor="#00f0ff" // glow turquoise
+            behindGlowSize={140}
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={false}
@@ -165,7 +175,7 @@ export default function AboutPage() {
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
             <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-            <img src="fg.png" alt="" />
+              <img src="fg.png" alt="" />
             </div>
             <div>
               <h1 className="font-bold">Figma</h1>
@@ -174,7 +184,7 @@ export default function AboutPage() {
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
             <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-            <img src="ja.png" alt="" />
+              <img src="ja.png" alt="" />
             </div>
             <div>
               <h1 className="font-bold">Java</h1>
@@ -184,7 +194,7 @@ export default function AboutPage() {
 
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
             <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-            <img src="css.png" alt="" />
+              <img src="css.png" alt="" />
             </div>
             <div>
               <h1 className="font-bold">CSS</h1>
@@ -193,7 +203,7 @@ export default function AboutPage() {
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
             <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-            <img src="ht.png" alt="" />
+              <img src="ht.png" alt="" />
             </div>
             <div>
               <h1 className="font-bold">HTML</h1>
@@ -202,7 +212,7 @@ export default function AboutPage() {
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
             <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-            <img src="ff.png" alt="" />
+              <img src="ff.png" alt="" />
             </div>
             <div>
               <h1 className="font-bold">Firebase</h1>
@@ -211,7 +221,7 @@ export default function AboutPage() {
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
             <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-            <img src="sq.png" alt="" />
+              <img src="sq.png" alt="" />
             </div>
             <div>
               <h1 className="font-bold">MySQL</h1>
@@ -221,7 +231,7 @@ export default function AboutPage() {
 
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
             <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-            <img src="vt.png" alt="" />
+              <img src="vt.png" alt="" />
             </div>
             <div>
               <h1 className="font-bold">Vite</h1>
@@ -230,7 +240,7 @@ export default function AboutPage() {
           </div>
           <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
             <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-            <img src="ph.png" alt="" />
+              <img src="ph.png" alt="" />
             </div>
             <div>
               <h1 className="font-bold">PHP</h1>
@@ -249,14 +259,7 @@ export default function AboutPage() {
             d'expériences numériques significatives.
           </p>
         </div>
-        <ChromaGrid
-        
-         items={[
-         { title: "React", icon: "/icons/react.svg" },
-         { title: "Next.js", icon: "/icons/next.svg" },
-         { title: "Tailwind", icon: "/icons/tw.svg" },
-         ]}
-        />
+        <ChromaGrid items={[]} />
       </section>
 
       <section className="mt-20 px-6  bg-gray-200/5 rounded-2xl" id="contact">

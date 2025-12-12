@@ -1,3 +1,4 @@
+"use client";
 import { Header } from "@/components/Header";
 import Link from "next/link";
 import TiltedCard from "@/components/TiltedCard";
@@ -41,8 +42,7 @@ export default function Home() {
               showCursor={true}
               cursorCharacter="|"
               variableSpeed={false}              // ➜ valeur par défaut souvent false
-              onSentenceComplete={() => {}}
-              
+              onSentenceComplete={() => {}} 
             />
           </p>
 
