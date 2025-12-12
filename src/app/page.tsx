@@ -3,11 +3,11 @@ import Link from "next/link";
 import TiltedCard from "@/components/TiltedCard";
 import Aurora from "@/components/Aurora";
 import AboutPage from "./about/page";
+import TextType from "@/components/TextType";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
-
       <Aurora
         colorStops={["#3A29FF", "#FF94B4", "#125B65"]}
         blend={0.5}
@@ -34,10 +34,16 @@ export default function Home() {
           </h1>
 
           <p className="text-base md:text-xl py-4 leading-relaxed">
-            Je transforme des idées en expériences digitales intuitives
-            et engageantes.
-            Allier code et design pour créer des solutions élégantes
-            et performantes.
+            <TextType 
+              text={["Je transforme des idées en expériences digitales intuitives et engageantes. Allier code et design pour créer des solutions élégantes et performantes."]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+              variableSpeed={false}              // ➜ valeur par défaut souvent false
+              onSentenceComplete={() => {}}
+              
+            />
           </p>
 
           {/* BUTTONS */}
@@ -54,10 +60,10 @@ export default function Home() {
             </Link>
 
             {/* Réseaux / icons */}
-            {["V", "V", "V"].map((v, i) => (
+            {["Explorez mes projets"].map((v, i) => (
               <Link
                 key={i}
-                href=""
+                href="#skills"
                 className="
                   border border-gray-600 px-4 py-2 rounded-md 
                   text-gray-300 hover:bg-gray-600 hover:text-white
@@ -77,9 +83,9 @@ export default function Home() {
             altText="Malick Mbodj"
             captionText="Malick Mbodj - Portfolio"
             containerHeight="280px"
-            containerWidth="280px"
-            imageHeight="280px"
-            imageWidth="280px"
+            containerWidth="390px"
+            imageHeight="380px"
+            imageWidth="380px"
             rotateAmplitude={12}
             scaleOnHover={1.2}
             showMobileWarning={false}

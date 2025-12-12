@@ -2,6 +2,17 @@
 import { Header } from "@/components/Header";
 import ProfileCard from "@/components/ProfileCard";
 import ChromaGrid from "@/components/ChromaGrid";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
+import BlurText from "@/components/BlurText";
+
+
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
 
 export default function AboutPage() {
   return (
@@ -14,15 +25,26 @@ export default function AboutPage() {
         {/* Bloc texte */}
         <div className="w-full lg:w-[40%] text-center lg:text-left">
           <h1 className="font-bold text-3xl sm:text-4xl">Sur Moi</h1>
-          <p className=" sm:text-xl mt-4 leading-relaxed">
-            Je suis un développeur Full Stack passionné par la création de
-            solutions numériques modernes et performantes. Grâce à une maîtrise
-            des technologies front-end (JavaScript, React, Tailwind) et back-end
-            (Node.js, Express, bases de données SQL/NoSQL), je conçois des
-            applications complètes, robustes et évolutives. J’aime relever des
-            défis techniques, optimiser les performances et livrer des solutions
-            efficaces qui apportent une vraie valeur.
-          </p>
+          <p className="sm:text-xl mt-4 leading-relaxed">
+  Je suis un développeur Full Stack passionné par la création de
+  solutions numériques modernes et performantes. Grâce à une maîtrise
+  des technologies front-end (
+  JavaScript 
+  <span className="inline-flex items-center"><IoLogoJavascript color="yellow" /></span>, 
+  React 
+  <span className="inline-flex items-center"><FaReact color="#125B60" /></span>, 
+  Tailwind 
+  <span className="inline-flex items-center"><RiTailwindCssFill color="#125B60" /></span>) 
+  et back-end (Node.js
+  <span className="inline-flex items-center"><FaNodeJs  color="green" /></span>
+  , Express, bases de données SQL/NoSQL
+  <span className="inline-flex items-center"><SiPostgresql  color="#336791" /></span>
+  ), je conçois des
+  applications complètes, robustes et évolutives. J’aime relever des
+  défis techniques, optimiser les performances et livrer des solutions
+  efficaces qui apportent une vraie valeur.
+</p>
+
         </div>
 
         {/* Bloc carte profil */}
@@ -227,7 +249,14 @@ export default function AboutPage() {
             d'expériences numériques significatives.
           </p>
         </div>
-        <ChromaGrid />
+        <ChromaGrid
+        
+         items={[
+         { title: "React", icon: "/icons/react.svg" },
+         { title: "Next.js", icon: "/icons/next.svg" },
+         { title: "Tailwind", icon: "/icons/tw.svg" },
+         ]}
+        />
       </section>
 
       <section className="mt-20 px-6  bg-gray-200/5 rounded-2xl" id="contact">
