@@ -1,81 +1,64 @@
 "use client";
-import { Header } from "@/components/Header";
+
 import ProfileCard from "@/components/ProfileCard";
 import { ChromaGrid } from "@/components/ChromaGrid";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaNodeJs } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
-import Link from "next/link";
 import Image from "next/image";
-
-const handleAnimationComplete = () => {
-  console.log("Animation completed!");
-};
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen text-white">
-      {/* <Header /> */}
+      {/* SECTION ABOUT */}
       <section
-        className="w-[99%] mx-auto  border-4 border-[#125B65] rounded-3xl p-6 flex flex-col lg:flex-row justify-around  items-center   lg:gap-6 h-auto lg:h-[550px]"
+        className="w-[99%] mx-auto border-4 border-[#125B65] rounded-3xl p-6 flex flex-col lg:flex-row justify-around items-center gap-6"
         id="about"
       >
-        {/* Bloc texte */}
+        {/* TEXTE */}
         <div className="w-full lg:w-[40%] text-center lg:text-left">
-          <h1 className="font-bold text-3xl sm:text-4xl">Sur Moi</h1>
+          <h1 className="font-bold text-3xl sm:text-4xl">Sur moi</h1>
+
           <p className="sm:text-xl mt-4 leading-relaxed">
             Je suis un développeur Full Stack passionné par la création de
             solutions numériques modernes et performantes. Grâce à une maîtrise
-            des technologies front-end ( JavaScript
-            <span className="inline-flex items-center">
-              <IoLogoJavascript color="yellow" />
-            </span>
-            , React
-            <span className="inline-flex items-center">
-              <FaReact color="#125B60" />
-            </span>
-            , Tailwind
-            <span className="inline-flex items-center">
-              <RiTailwindCssFill color="#125B60" />
-            </span>
-            ) et back-end (Node.js
-            <span className="inline-flex items-center">
-              <FaNodeJs color="green" />
-            </span>
-            , Express, bases de données SQL/NoSQL
-            <span className="inline-flex items-center">
-              <SiPostgresql color="#336791" />
-            </span>
-            ), je conçois des applications complètes, robustes et évolutives.
-            J&#39;aime relever des défis techniques, optimiser les performances
-            et livrer des solutions efficaces qui apportent une vraie valeur.
+            des technologies front-end (JavaScript{" "}
+            <IoLogoJavascript className="inline text-yellow-400" />, React{" "}
+            <FaReact className="inline text-cyan-400" />, Tailwind{" "}
+            <RiTailwindCssFill className="inline text-cyan-400" />) et back-end
+            (Node.js <FaNodeJs className="inline text-green-500" />, Express,
+            bases de données SQL/NoSQL{" "}
+            <SiPostgresql className="inline text-blue-400" />), je conçois des
+            applications complètes, robustes et évolutives. J&#39;aime relever
+            des défis techniques, optimiser les performances et livrer des
+            solutions efficaces qui apportent une vraie valeur.
           </p>
         </div>
 
-        {/* Bloc carte profil */}
-        <div className=" w-full sm:w-[70%] lg:w-[35%] ">
+        {/* PROFILE CARD */}
+        <div className="w-full sm:w-[70%] lg:w-[35%]">
           <ProfileCard
             name="Malick Mbodj"
             title="Web Developer & UI/UX Designer"
             handle="codeNivo"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="milk.jpg"
+            avatarUrl="/milk.jpg"
             miniAvatarUrl="/milk.jpg"
-            innerGradient={["#0087CEEB", "#0087CEEB"]} // léger dégradé bleu
-            behindGlowColor="#00f0ff" // glow turquoise
+            innerGradient={["#0087CE", "#00C6FF"]}
+            behindGlowColor="#00f0ff"
             behindGlowSize={140}
-            showUserInfo={true}
-            enableTilt={true}
+            showUserInfo
+            enableTilt
             enableMobileTilt={false}
             onContactClick={() => console.log("Contact clicked")}
           />
         </div>
       </section>
 
-      {/* Autres sections à ajouter ici */}
+      {/* TECHNOLOGIES */}
       <section className="mt-20 px-4">
         <h2 className="text-4xl font-bold">Outils et technologies</h2>
         <p className="mb-8">Mes compétences professionnelles</p>
@@ -113,135 +96,62 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* PROJECTS */}
       <section className="mt-20 px-4" id="skills">
         <div className="text-center">
-          <h1 className="text-4xl font-bold">Projet</h1>
+          <h2 className="text-4xl font-bold">Projets</h2>
           <p>
-            Présentation d&#39;une sélection de projets qui reflètent mes
-            compétences, ma créativité et ma passion pour la création
-            d&#39;expériences numériques significatives.
+            Présentation d&#39;une sélection de projets reflétant mes compétences
+            et ma créativité.
           </p>
         </div>
+
         <ChromaGrid items={[]} />
       </section>
 
-      <section className="mt-20 px-6  bg-gray-200/5 rounded-2xl" id="contact">
+      {/* CONTACT */}
+      <section className="mt-20 px-6 bg-gray-200/5 rounded-2xl" id="contact">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4">Contact</h2>
-          <p className="text-gray-600 mb-10">
-            Une idée, un projet ou une collaboration ? Envoyez-moi un message.
-          </p>
 
-          <div className=" shadow-xl rounded-2xl p-8 border border-gray-200/30">
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Nom */}
-              <div className="flex flex-col">
-                <label className="text-left text-sm font-medium mb-1">
-                  Nom
-                </label>
-                <input
-                  type="text"
-                  className="border border-gray-200/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-                  placeholder="Votre nom"
-                />
-              </div>
-
-              {/* Email */}
-              <div className="flex flex-col">
-                <label className="text-left text-sm font-medium mb-1">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="border border-gray-200/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-                  placeholder="Votre email"
-                />
-              </div>
-
-              {/* Message (sur 2 colonnes) */}
-              <div className="flex flex-col md:col-span-2">
-                <label className="text-left text-sm font-medium mb-1">
-                  Message
-                </label>
-                <textarea
-                  rows={5}
-                  className="border border-gray-200/30 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-black"
-                  placeholder="Écrivez votre message ici..."
-                ></textarea>
-              </div>
-
-              {/* Bouton */}
-              <div className="md:col-span-2 flex justify-center">
-                <button
-                  type="submit"
-                  className="px-8 py-3 bg-black text-white font-semibold rounded-xl hover:bg-gray-800 transition"
-                >
-                  Envoyer
-                </button>
-              </div>
-            </form>
-          </div>
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+            <input
+              name="name"
+              placeholder="Votre nom"
+              className="rounded-xl px-4 py-3 bg-black/20 border border-gray-200/20"
+            />
+            <input
+              name="email"
+              type="email"
+              placeholder="Votre email"
+              className="rounded-xl px-4 py-3 bg-black/20 border border-gray-200/20"
+            />
+            <textarea
+              name="message"
+              rows={5}
+              placeholder="Votre message"
+              className="md:col-span-2 rounded-xl px-4 py-3 bg-black/20 border border-gray-200/20"
+            />
+            <button className="md:col-span-2 bg-black py-3 rounded-xl font-semibold hover:bg-gray-800 transition">
+              Envoyer
+            </button>
+          </form>
         </div>
       </section>
 
-      <footer className="mt-20 text-white py-12">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Logo + description */}
-          <div>
-            <h1 className="text-2xl font-bold mb-3">CodeNivo</h1>
-            <p className="text-gray-400 text-sm">
-              Développeur Full Stack passionné, créant des solutions modernes et
-              performantes.
-            </p>
-          </div>
-
-          {/* Navigation */}
-          <div>
-            <h3 className="font-semibold mb-3">Navigation</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>
-                <Link href="/" className="hover:text-white transition">
-                  Accueil
-                </Link>
-              </li>
-              <li>
-                <Link href="#about" className="hover:text-white transition">
-                  À propos
-                </Link>
-              </li>
-              <li>
-                <Link href="#skills" className="hover:text-white transition">
-                  Projets
-                </Link>
-              </li>
-              <li>
-                <Link href="#contact" className="hover:text-white transition">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Réseaux sociaux */}
-          <div>
-            <h3 className="font-semibold mb-3">Suivez-moi</h3>
-            <div className="flex space-x-4 text-gray-300">
-              <Link href="#" className="hover:text-white transition">
-                Instagram
-              </Link>
-              <Link href="#" className="hover:text-white transition">
-                LinkedIn
-              </Link>
-              <Link href="#" className="hover:text-white transition">
-                GitHub
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Ligne du bas */}
-        <div className="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+      {/* FOOTER */}
+      <footer className="mt-20 py-12 border-t border-gray-700 text-center">
+        <p className="text-gray-500 text-sm">
           © {new Date().getFullYear()} CodeNivo — Tous droits réservés.
+        </p>
+
+        <div className="flex justify-center gap-6 mt-4">
+          <Link href="https://github.com/Doukss" target="_blank">
+            GitHub
+          </Link>
+          <Link href="https://linkedin.com" target="_blank">
+            LinkedIn
+          </Link>
         </div>
       </footer>
     </main>
