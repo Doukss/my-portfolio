@@ -7,8 +7,8 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
-import BlurText from "@/components/BlurText";
 import Link from "next/link";
+import Image from "next/image";
 
 const handleAnimationComplete = () => {
   console.log("Animation completed!");
@@ -49,8 +49,8 @@ export default function AboutPage() {
               <SiPostgresql color="#336791" />
             </span>
             ), je conçois des applications complètes, robustes et évolutives.
-            J&#39;aime relever des défis techniques, optimiser les performances et
-            livrer des solutions efficaces qui apportent une vraie valeur.
+            J&#39;aime relever des défis techniques, optimiser les performances
+            et livrer des solutions efficaces qui apportent une vraie valeur.
           </p>
         </div>
 
@@ -76,178 +76,40 @@ export default function AboutPage() {
       </section>
 
       {/* Autres sections à ajouter ici */}
-      <section className="mt-20 px-4" id="">
-        <p className="text-4xl font-bold">Outils et technologies</p>
-        <br />
+      <section className="mt-20 px-4">
+        <h2 className="text-4xl font-bold">Outils et technologies</h2>
         <p className="mb-8">Mes compétences professionnelles</p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl flex items-center justify-center">
-              <img src="vsc.png" alt="" />
+          {[
+            { img: "vsc.png", title: "VS Code", desc: "Éditeur" },
+            { img: "rea.png", title: "React", desc: "Framework" },
+            { img: "ne.png", title: "Next.js", desc: "Framework" },
+            { img: "tail.png", title: "Tailwind", desc: "Framework" },
+            { img: "js.png", title: "JavaScript", desc: "Langage" },
+            { img: "nod.png", title: "Node.js", desc: "Runtime" },
+            { img: "git.png", title: "GitHub", desc: "Versioning" },
+            { img: "fg.png", title: "Figma", desc: "Design" },
+            { img: "ph.png", title: "PHP", desc: "Langage" },
+          ].map((tool) => (
+            <div
+              key={tool.title}
+              className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-3 items-center hover:bg-gray-50/5 transition"
+            >
+              <div className="bg-gray-100/5 w-[64px] h-[64px] rounded-xl flex items-center justify-center">
+                <Image
+                  src={`/${tool.img}`}
+                  alt={tool.title}
+                  width={48}
+                  height={48}
+                />
+              </div>
+              <div>
+                <h3 className="font-bold">{tool.title}</h3>
+                <p className="text-sm text-gray-400">{tool.desc}</p>
+              </div>
             </div>
-            <div>
-              <h1 className="font-bold">Code Visual Studio</h1>
-              <p>Éditeur de code</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="rea.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">React JS</h1>
-              <p>Cadre</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="ne.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">Next JS</h1>
-              <p>Cadre</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="tail.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">Tailwind CSS</h1>
-              <p>Cadre</p>
-            </div>
-          </div>
-
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="boo.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">Bootstrap</h1>
-              <p>Cadre</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="js.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">JavaScript</h1>
-              <p>Langue</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl flex items-center justify-center">
-              <img src="nod.png" alt="" className="w-14 h-14" />
-            </div>
-            <div>
-              <h1 className="font-bold">Node JS</h1>
-              <p>Exécution Javascript</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl flex items-center justify-center">
-              <img src="git.png" alt="" className="w-14 h-14" />
-            </div>
-            <div>
-              <h1 className="font-bold">Github</h1>
-              <p>Dépôt</p>
-            </div>
-          </div>
-
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="ai.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">Adobe Illustrator</h1>
-              <p>Application de concep...</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl flex items-center justify-center">
-              <img src="va.png" alt="" className="w-15 h-15 " />
-            </div>
-            <div>
-              <h1 className="font-bold">Canva</h1>
-              <p>Application de concep...</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="fg.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">Figma</h1>
-              <p>Application de concep...</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="ja.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">Java</h1>
-              <p>Langue</p>
-            </div>
-          </div>
-
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="css.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">CSS</h1>
-              <p>Langue</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="ht.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">HTML</h1>
-              <p>Langue</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="ff.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">Firebase</h1>
-              <p>Cadre</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="sq.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">MySQL</h1>
-              <p>Cadre</p>
-            </div>
-          </div>
-
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="vt.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">Vite</h1>
-              <p>Cadre</p>
-            </div>
-          </div>
-          <div className="border border-gray-100/15 h-24 rounded-xl flex gap-4 p-2 items-center hover:bg-gray-50/5 transition-colors">
-            <div className="bg-gray-100/5 w-18 h-18 rounded-xl">
-              <img src="ph.png" alt="" />
-            </div>
-            <div>
-              <h1 className="font-bold">PHP</h1>
-              <p>Langue</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 

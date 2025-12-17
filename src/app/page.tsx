@@ -12,7 +12,7 @@ export default function Home() {
       <Aurora
         colorStops={["#3A29FF", "#FF94B4", "#125B65"]}
         blend={0.5}
-        amplitude={1.0}
+        amplitude={1.5}
         speed={0.5}
       />
 
@@ -35,14 +35,16 @@ export default function Home() {
           </h1>
 
           <p className="text-base md:text-xl py-4 leading-relaxed">
-            <TextType 
-              text={["Je transforme des idées en expériences digitales intuitives et engageantes. Allier code et design pour créer des solutions élégantes et performantes."]}
+            <TextType
+              text={[
+                "Je transforme des idées en expériences digitales intuitives et engageantes. Allier code et design pour créer des solutions élégantes et performantes.",
+              ]}
               typingSpeed={75}
               pauseDuration={1500}
               showCursor={true}
               cursorCharacter="|"
-              variableSpeed={false}              // ➜ valeur par défaut souvent false
-              onSentenceComplete={() => {}} 
+              variableSpeed={false} // ➜ valeur par défaut souvent false
+              onSentenceComplete={() => {}}
             />
           </p>
 
@@ -51,9 +53,11 @@ export default function Home() {
             <Link
               href=""
               className="
-                border border-gray-600 px-4 py-2 rounded-md 
+                border border-gray-600 px-4 py-2 rounded-full 
                 text-gray-300 hover:bg-gray-600 hover:text-white
                 transition-colors
+                font-semibold
+                flex items-center justify-center
               "
             >
               Télécharger CV
@@ -65,9 +69,12 @@ export default function Home() {
                 key={i}
                 href="#skills"
                 className="
-                  border border-gray-600 px-4 py-2 rounded-md 
+                  border border-gray-600 px-4 py-2 rounded-full 
                   text-gray-300 hover:bg-gray-600 hover:text-white
                   transition-colors
+                  font-semibold
+                  h-16
+                  flex items-center justify-center
                 "
               >
                 {v}

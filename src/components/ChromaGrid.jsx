@@ -27,7 +27,7 @@ export const ChromaGrid = ({
       handle: "  ",
       borderColor: "#4F46E5",
       backgroundColor: "#000",
-      gradient: "linear-gradient(145deg, #4F46E5, #000)",
+      gradient: "linear-gradient()",
       url: "https://github.com/",
     },
     {
@@ -36,7 +36,7 @@ export const ChromaGrid = ({
       subtitle: "Un portfolio web interactif présentant..",
       handle: "  ",
       borderColor: "#10B981",
-      gradient: "linear-gradient(210deg, #0B7457, #000)",
+      gradient: "linear-gradient()",
       url: "https://linkedin.com/in/",
     },
     {
@@ -45,7 +45,7 @@ export const ChromaGrid = ({
       subtitle: "Un portfolio web interactif présentant..",
       handle: "  ",
       borderColor: "#F59E0B",
-      gradient: "linear-gradient(165deg, #F59E0B, #000)",
+      gradient: "linear-gradient()",
       url: "https://dribbble.com/",
     },
     {
@@ -54,7 +54,7 @@ export const ChromaGrid = ({
       subtitle: "Un portfolio web interactif présentant..",
       handle: "  ",
       borderColor: "#EF4444",
-      gradient: "linear-gradient(195deg, #EF4444, #000)",
+      gradient: "linear-gradient()",
       url: "https://kaggle.com/",
     },
     {
@@ -63,7 +63,7 @@ export const ChromaGrid = ({
       subtitle: "Un portfolio web interactif présentant..",
       handle: "  ",
       borderColor: "#8B5CF6",
-      gradient: "linear-gradient(225deg, #8B5CF6, #000)",
+      gradient: "linear-gradient()",
       url: "https://github.com/",
     },
     {
@@ -72,7 +72,7 @@ export const ChromaGrid = ({
       subtitle: "Un portfolio web interactif présentant..",
       handle: "  ",
       borderColor: "#06B6D4",
-      gradient: "linear-gradient(135deg, #06B6D4, #000)",
+      gradient: "linear-gradient()",
       url: "https://aws.amazon.com/",
     },
   ];
