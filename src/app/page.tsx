@@ -1,5 +1,5 @@
 "use client";
-import { Header } from "@/components/Header";
+
 import Link from "next/link";
 import TiltedCard from "@/components/TiltedCard";
 import Aurora from "@/components/Aurora";
@@ -43,15 +43,14 @@ export default function Home() {
               pauseDuration={1500}
               showCursor={true}
               cursorCharacter="|"
-              variableSpeed={false} // ➜ valeur par défaut souvent false
-              onSentenceComplete={() => {}}
+              variableSpeed={false}
             />
           </p>
 
           {/* BUTTONS */}
           <div className="flex justify-center md:justify-start gap-4 mt-4">
             <Link
-              href=""
+              href="#"
               className="
                 border border-gray-600 px-4 py-2 rounded-full 
                 text-gray-300 hover:bg-gray-600 hover:text-white
@@ -63,23 +62,19 @@ export default function Home() {
               Télécharger CV
             </Link>
 
-            {/* Réseaux / icons */}
-            {["Explorez mes projets"].map((v, i) => (
-              <Link
-                key={i}
-                href="#skills"
-                className="
-                  border border-gray-600 px-4 py-2 rounded-full 
-                  text-gray-300 hover:bg-gray-600 hover:text-white
-                  transition-colors
-                  font-semibold
-                  h-16
-                  flex items-center justify-center
-                "
-              >
-                {v}
-              </Link>
-            ))}
+            <Link
+              href="#skills"
+              className="
+                border border-gray-600 px-4 py-2 rounded-full 
+                text-gray-300 hover:bg-gray-600 hover:text-white
+                transition-colors
+                font-semibold
+                h-16
+                flex items-center justify-center
+              "
+            >
+              Explorez mes projets
+            </Link>
           </div>
         </div>
 
