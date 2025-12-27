@@ -29,23 +29,25 @@ export default function Home() {
         <div className="w-full md:w-1/2 text-white text-center md:text-left">
           <p className="text-lg md:text-xl">Bonjour, je suis Malick Mbodj</p>
 
-          <h1 className="text-3xl md:text-5xl font-bold leading-snug">
+          <span className="text-3xl md:text-5xl font-bold leading-snug">
             Développeur Web + <br />
             UI / UX Designer
-          </h1>
+          </span>
 
-          <p className="text-base md:text-xl py-4 leading-relaxed">
+          <div className="text-base md:text-xl py-4 leading-relaxed">
             <TextType
-              text={[
-                "Je transforme des idées en expériences digitales intuitives et engageantes. Allier code et design pour créer des solutions élégantes et performantes.",
-              ]}
-              typingSpeed={75}
-              pauseDuration={1500}
-              showCursor={true}
-              cursorCharacter="|"
-              variableSpeed={false}
-            />
-          </p>
+  text={[
+    "Je transforme des idées en expériences digitales intuitives et engageantes. Allier code et design pour créer des solutions élégantes et performantes.",
+  ]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|"
+  variableSpeed={false}
+  onSentenceComplete={() => {}}
+/>
+
+          </div>
 
           {/* BUTTONS */}
           <div className="flex justify-center md:justify-start gap-4 mt-4">

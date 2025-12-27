@@ -47,7 +47,7 @@ export default function AboutPage() {
             contactText="Contact Me"
             avatarUrl="/milk.jpg"
             miniAvatarUrl="/milk.jpg"
-            innerGradient={["#0087CE", "#00C6FF"]}
+            innerGradient={["", ""]}
             behindGlowColor="#00f0ff"
             behindGlowSize={140}
             showUserInfo
