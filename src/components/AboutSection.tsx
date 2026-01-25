@@ -101,7 +101,7 @@ export default function AboutSection() {
         <div className="text-center">
           <h2 className="text-4xl font-bold">Projets</h2>
           <p>
-            Présentation d&#39;une sélection de projets reflétant mes
+            Présentation d&apos;une sélection de projets reflétant mes
             compétences et ma créativité.
           </p>
         </div>
