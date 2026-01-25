@@ -9,7 +9,7 @@ import { SiPostgresql } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function AboutPage() {
+export default function AboutSection() {
   return (
     <main className="min-h-screen text-white">
       {/* SECTION ABOUT */}
@@ -30,10 +30,10 @@ export default function AboutPage() {
             <RiTailwindCssFill className="inline text-cyan-400" />) et back-end
             (Node.js <FaNodeJs className="inline text-green-500" />, Express,
             bases de données SQL/NoSQL{" "}
-            <SiPostgresql className="inline text-blue-400" />), je conçois des
-            applications complètes, robustes et évolutives. J&#39;aime relever
-            des défis techniques, optimiser les performances et livrer des
-            solutions efficaces qui apportent une vraie valeur.
+            <SiPostgresql className="inline text-blue-400" />
+            ), je conçois des applications complètes, robustes et évolutives.
+            J&#39;aime relever des défis techniques, optimiser les performances
+            et livrer des solutions efficaces qui apportent une vraie valeur.
           </p>
         </div>
 
@@ -101,8 +101,8 @@ export default function AboutPage() {
         <div className="text-center">
           <h2 className="text-4xl font-bold">Projets</h2>
           <p>
-            Présentation d&#39;une sélection de projets reflétant mes compétences
-            et ma créativité.
+            Présentation d&#39;une sélection de projets reflétant mes
+            compétences et ma créativité.
           </p>
         </div>
 

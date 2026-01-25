@@ -3,7 +3,7 @@
 import Link from "next/link";
 import TiltedCard from "@/components/TiltedCard";
 import Aurora from "@/components/Aurora";
-import AboutPage from "./about/page";
+import AboutSection from "@/components/AboutSection";
 import TextType from "@/components/TextType";
 
 export default function Home() {
@@ -100,7 +100,7 @@ export default function Home() {
 
       {/* ABOUT SECTION */}
       <div className="mt-24 md:mt-40 px-4 md:px-20">
-        <AboutPage />
+        <AboutSection />
       </div>
     </main>
   );
