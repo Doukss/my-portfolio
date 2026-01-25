@@ -36,17 +36,16 @@ export default function Home() {
 
           <div className="text-base md:text-xl py-4 leading-relaxed">
             <TextType
-  text={[
-    "Je transforme des idées en expériences digitales intuitives et engageantes. Allier code et design pour créer des solutions élégantes et performantes.",
-  ]}
-  typingSpeed={75}
-  pauseDuration={1500}
-  showCursor={true}
-  cursorCharacter="|"
-  variableSpeed={false}
-  onSentenceComplete={() => {}}
-/>
-
+              text={[
+                "Je transforme des idées en expériences digitales intuitives et engageantes. Allier code et design pour créer des solutions élégantes et performantes.",
+              ]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+              variableSpeed={false}
+              onSentenceComplete={() => {}}
+            />
           </div>
 
           {/* BUTTONS */}

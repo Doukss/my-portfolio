@@ -46,9 +46,9 @@ export default function AboutPage() {
             status="Online"
             contactText="Contact Me"
             avatarUrl="/milk.jpg"
-            miniAvatarUrl="/milk.jpg"
-            innerGradient={["", ""]}
-            behindGlowColor="#00f0ff"
+            // miniAvatarUrl="/milk.jpg"
+            // innerGradient={["", ""]}
+            // behindGlowColor="#00f0ff"
             behindGlowSize={140}
             showUserInfo
             enableTilt
