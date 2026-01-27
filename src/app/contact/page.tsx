@@ -9,7 +9,7 @@ export default function ContactPage() {
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-4">Contact</h1>
           <p className="text-xl text-gray-400">
-            N'hésitez pas à me contacter pour discuter de vos projets.
+            N&apos;hésitez pas à me contacter pour discuter de vos projets.
           </p>
         </div>
 
