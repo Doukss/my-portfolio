@@ -46,10 +46,10 @@ export default function AboutSection() {
             status="Online"
             contactText="Contact Me"
             avatarUrl="/milk.jpg"
-            miniAvatarUrl="/milk.jpg"
-            innerGradient={["", ""]}
-            behindGlowColor="#00f0ff"
-            behindGlowSize={140}
+            // miniAvatarUrl="/milk.jpg"
+            // innerGradient={["", ""]}
+            // behindGlowColor="#00f0ff"
+            // behindGlowSize={140}
             showUserInfo
             enableTilt
             enableMobileTilt={false}
