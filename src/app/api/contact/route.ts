@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
       service: "gmail",
       auth: {
         user: "dmbodji297@gmail.com",
-        pass: "faya322",
+        pass: "Faya322",
       },
     });
 
